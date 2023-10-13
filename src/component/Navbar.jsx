@@ -11,20 +11,13 @@ const Navbar = () => {
                         ? "pending"
                         : ""
                     }>Home</NavLink></li>
-                <li><NavLink to="/addcoffee" className={({ isActive, isPending }) =>
+                <li><NavLink to="/addCoffee" className={({ isActive, isPending }) =>
                       isActive
                         ? "text-red-600 underline"
                         : isPending
                         ? "pending"
                         : ""
                     }>Add Coffee</NavLink></li>
-                <li><NavLink to="/updatecoffee" className={({ isActive, isPending }) =>
-                      isActive
-                        ? "text-red-600 underline"
-                        : isPending
-                        ? "pending"
-                        : ""
-                    }>Update Coffee</NavLink></li>
                 
             </ul>
         </div>
