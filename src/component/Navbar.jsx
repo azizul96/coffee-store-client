@@ -18,6 +18,27 @@ const Navbar = () => {
                         ? "pending"
                         : ""
                     }>Add Coffee</NavLink></li>
+                <li><NavLink to="/signUp" className={({ isActive, isPending }) =>
+                      isActive
+                        ? "text-red-600 underline"
+                        : isPending
+                        ? "pending"
+                        : ""
+                    }>Sign Up</NavLink></li>
+                <li><NavLink to="/login" className={({ isActive, isPending }) =>
+                      isActive
+                        ? "text-red-600 underline"
+                        : isPending
+                        ? "pending"
+                        : ""
+                    }>Login</NavLink></li>
+                <li><NavLink to="/users" className={({ isActive, isPending }) =>
+                      isActive
+                        ? "text-red-600 underline"
+                        : isPending
+                        ? "pending"
+                        : ""
+                    }>Users</NavLink></li>
                 
             </ul>
         </div>
